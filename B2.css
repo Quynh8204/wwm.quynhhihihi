@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(65, 181, 204);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.selector {
+    border-radius: 30px;
+    border: 1px solid hsla(0,0%,100%,.3);
+
+}
+
+li a:hover {
+    background-color: rgb(86, 154, 167);
+}
+.image {
+    width: 300px;
+    }
+
+.fakeimg {
+    width: 80%;
+    padding: 10px;
+}
+.card {
+    padding: 20px;
+    margin-right: 20px;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.leftcolumn {   
+    float: right;
+    width: 43%;
+    padding:20px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: right;
+    width: 43%;
+    background-color: white;
+    padding: 30px;
+}
+.footer {
+    padding: 10px;
+    text-align: left;
+    background: rgb(59, 136, 196);
+    margin-top: 50px;
+}
+img {
+    height: 300px;
+}
+.image-container {
+    display: inline-block;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.image-container img {
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+.text-container {
+    margin-left: 20px;
+}
+.image-container1 {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            margin-right: 0;
+        }
+        .image-container1 img {
+            width: 33.33%;
+            height: auto;
+        }
+        .image-container1 img {
+            transition: transform 0.3s ease;
+        }
+        .image-container1:hover img {
+            transform: scale(1.1);
+        }
+        .text-container1 {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .container1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            font-family: Arial;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    }
+
+a:hover {
+    color: rgb(59, 136, 196);
+}
+.title {
+    font-size: 16px;
+    color: black;
+   *Thêm các thuộc tính CSS khác mà bạn muốn áp dụng cho lớp "title"*/
+}
+.hover-text {
+  color: rgb(231, 59, 59); /* Màu chữ mặc định */
+}
+
+.hover-text:hover {
+  color: rgb(59, 136, 196); /* Màu chữ khi hover */
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+    .topnav a {
+    float: none;
+    width: 100%;
+    }
+}
